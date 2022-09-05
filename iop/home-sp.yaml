@@ -1,0 +1,11 @@
+storageprovider-home:
+  enabled: true
+  service:
+    grpc:
+      port: 17000
+    http:
+      port: 17001
+  persistentVolume:
+    enabled: true
+    existingClaim: iop-pvc
+

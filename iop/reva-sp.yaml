@@ -1,0 +1,10 @@
+storageprovider-reva:
+  enabled: true
+  service:
+    grpc:
+      port: 18000
+    http:
+      port: 18001
+  persistentVolume:
+    enabled: true
+    existingClaim: iop-pvc

@@ -1,0 +1,14 @@
+[grpc]
+address = "0.0.0.0:16000"
+
+[grpc.services.storageprovider]
+driver = "localhome"
+mount_path = "/public"
+mount_id = "123e4567-e89b-12d3-a456-426655440000"
+data_server_url = "http://iop-storageprovider-public:16001/data"
+
+[http]
+address = "0.0.0.0:16001"
+
+[http.services.dataprovider]
+driver = "localhome"

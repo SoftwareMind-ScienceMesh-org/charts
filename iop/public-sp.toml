@@ -1,0 +1,11 @@
+storageprovider-public:
+  enabled: true
+  service:
+    grpc:
+      port: 16000
+    http:
+      port: 16001
+  persistentVolume:
+    enabled: true
+    existingClaim: iop-pvc
+

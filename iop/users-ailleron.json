@@ -1,0 +1,93 @@
+[
+        {
+                "id": {
+                        "opaque_id": "jarek1234",
+                        "idp": "softwaremind.com"
+                },
+                "username": "jarek",
+                "secret": "jarekpass",
+                "mail": "jarek@softwaremind.com",
+                "display_name": "Jarek",
+                "groups": ["sailing-lovers", "violin-haters", "physics-lovers"]
+        },
+        {
+                "id": {
+                        "opaque_id": "mateusz5678",
+                        "idp": "softwaremind.com"
+                },
+                "username": "mateusz",
+                "secret": "mateuszpass",
+                "mail": "magc@softwaremind.com",
+                "display_name": "Mateusz",
+                "groups": ["radium-lovers", "polonium-lovers", "physics-lovers"]
+        },
+        {
+                "id": {
+                        "opaque_id": "dawid9876",
+                        "idp": "softwaremind.com"
+                },
+                "username": "dawid",
+                "secret": "dawidpass",
+                "mail": "dagl@softwaremind.com",
+                "display_name": "Dawid",
+                "groups": ["quantum-lovers", "philosophy-haters", "physics-lovers"]
+        },
+        {
+                "id": {
+                        "opaque_id": "test4242",
+                        "idp": "softwaremind.com"
+                },
+                "username": "test",
+                "secret": "testpass",
+                "mail": "test42@softwaremind.com",
+                "display_name": "Testuser",
+                "groups": ["test-lovers", "bug-haters", "ai-lovers"]
+        },
+        {
+                "id": {
+                        "opaque_id": "marcin1234",
+                        "idp": "softwaremind.com"
+                },
+                "username": "marcin",
+                "secret": "marcinpass",
+                "mail": "masi@softwaremind.com",
+                "display_name": "Marcin",
+                "groups": ["ailleron-lovers", "bug-haters", "sm-lovers"]
+        },
+        {
+                "id": {
+                        "opaque_id": "piotr5678",
+                        "idp": "softwaremind.com"
+                },
+                "username": "piotr",
+                "secret": "piotrpass",
+                "mail": "piwi@softwaremind.com",
+                "display_name": "Piotr",
+                "groups": ["ailleron-lovers", "bug-haters", "sm-lovers"]
+        },
+	{
+                "id": {
+                        "opaque_id": "michal234",
+                        "idp": "softwaremind.com"
+                },
+                "username": "michal",
+                "secret": "72F*OvJp",
+                "mail": "mzimniewicz@man.poznan.pl",
+                "display_name": "Michal",
+                "groups": ["science-lovers", "bug-haters", "test-lovers"]
+        },
+        {
+                "id": {
+                        "opaque_id": "4c510ada-c86b-4815-8820-42cdf82c3d51",
+                        "idp": "cernbox.cern.ch"
+                },
+                "username": "einstein",
+                "secret": "relativity",
+                "mail": "einstein@cern.ch",
+                "display_name": "Albert Einstein",
+                "groups": ["sailing-lovers", "violin-haters", "physics-lovers"],
+                "uid_number": 123,
+                "gid_number": 987
+        }
+]
+
