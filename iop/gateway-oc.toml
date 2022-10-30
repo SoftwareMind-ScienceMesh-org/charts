@@ -34,7 +34,7 @@ publicshares = "localhost:16000"
 driver = "nextcloud"
 
 [grpc.services.ocmcore.drivers.nextcloud]
-endpoint = "https://nextcloud.softwaremind.com/index.php/apps/sciencemesh/"
+endpoint = "https://owncloud.softwaremind.com/index.php/apps/sciencemesh/"
 shared_secret = "shared-secret-1"
 mock_http = false
 
@@ -42,7 +42,7 @@ mock_http = false
 driver = "nextcloud"
 
 [grpc.services.ocmshareprovider.drivers.nextcloud]
-endpoint = "https://nextcloud.softwaremind.com/index.php/apps/sciencemesh/"
+endpoint = "https://owncloud.softwaremind.com/index.php/apps/sciencemesh/"
 shared_secret = "shared-secret-1"
 mock_http = false
 
@@ -50,7 +50,7 @@ mock_http = false
 driver = "nextcloud"
 
 [grpc.services.storageprovider.drivers.nextcloud]
-endpoint = "https://nextcloud.softwaremind.com/index.php/apps/sciencemesh/"
+endpoint = "https://owncloud.softwaremind.com/index.php/apps/sciencemesh/"
 shared_secret = "shared-secret-1"
 mock_http = false
 
@@ -58,7 +58,7 @@ mock_http = false
 auth_manager = "nextcloud"
 
 [grpc.services.authprovider.auth_managers.nextcloud]
-endpoint = "https://nextcloud.softwaremind.com/index.php/apps/sciencemesh/"
+endpoint = "https://owncloud.softwaremind.com/index.php/apps/sciencemesh/"
 shared_secret = "shared-secret-1"
 mock_http = false
 
@@ -66,7 +66,7 @@ mock_http = false
 driver = "nextcloud"
 
 [grpc.services.userprovider.drivers.nextcloud]
-endpoint = "https://nextcloud.softwaremind.com/index.php/apps/sciencemesh/"
+endpoint = "https://owncloud.softwaremind.com/index.php/apps/sciencemesh/"
 shared_secret = "shared-secret-1"
 mock_http = false
 

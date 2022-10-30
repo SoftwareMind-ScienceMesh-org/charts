@@ -1,0 +1,860 @@
+[
+ {
+  "name": "WWU",
+  "full_name": "University of Muenster",
+  "description": "University of Muenster ScienceMesh Test",
+  "organization": "WWU Muenster",
+  "domain": "uni-muenster.de",
+  "homepage": "https://www.uni-muenster.de",
+  "email": "info@sciebo.de",
+  "services": [
+   {
+    "host": "iop.sciencemesh.uni-muenster.de",
+    "endpoint": {
+     "type": {
+      "name": "OCM",
+      "description": "OpenCloudMesh Service"
+     },
+     "name": "OCM",
+     "path": "https://iop.sciencemesh.uni-muenster.de/iop/ocm"
+    },
+    "api_version": "0.1.0"
+   },
+   {
+    "host": "iop.sciencemesh.uni-muenster.de:443",
+    "endpoint": {
+     "type": {
+      "name": "GATEWAY",
+      "description": "CS3 Gateway Service"
+     },
+     "name": "GATEWAY",
+     "path": "grpc://iop.sciencemesh.uni-muenster.de:443",
+     "is_monitored": true
+    },
+    "api_version": "0.1.0"
+   },
+   {
+    "host": "iop.sciencemesh.uni-muenster.de",
+    "endpoint": {
+     "type": {
+      "name": "WEBDAV",
+      "description": "Web Distributed Authoring and Versioning Service"
+     },
+     "name": "WEBDAV",
+     "path": "https://iop.sciencemesh.uni-muenster.de/iop/remote.php/webdav"
+    },
+    "api_version": "0.1.0"
+   },
+   {
+    "host": "iop.sciencemesh.uni-muenster.de",
+    "endpoint": {
+     "type": {
+      "name": "REVAD",
+      "description": "Reva Daemon Service"
+     },
+     "name": "REVAD",
+     "path": "https://iop.sciencemesh.uni-muenster.de/iop",
+     "is_monitored": true,
+     "properties": {
+      "API_VERSION": "0.1.0"
+     }
+    },
+    "api_version": "0.1.0",
+    "additional_endpoints": [
+     {
+      "type": {
+       "name": "METRICS",
+       "description": "Prometheus metrics provider"
+      },
+      "name": "METRICS",
+      "path": "https://iop.sciencemesh.uni-muenster.de/iop/metrics",
+      "is_monitored": true
+     }
+    ]
+   }
+  ],
+  "properties": {
+   "OPERATOR": "WWU",
+   "ORGANIZATION": "WWU Muenster"
+  }
+ },
+ {
+  "name": "CESNET",
+  "full_name": "CESNET a.l.e.",
+  "description": "CESNET ScienceMesh Test",
+  "organization": "CESNET a.l.e.",
+  "domain": "sciencemesh.cesnet.cz",
+  "homepage": "https://www.cesnet.cz/",
+  "email": "du-support@cesnet.cz",
+  "services": [
+   {
+    "host": "sciencemesh.cesnet.cz",
+    "endpoint": {
+     "type": {
+      "name": "WEBDAV",
+      "description": "Web Distributed Authoring and Versioning Service"
+     },
+     "name": "WEBDAV",
+     "path": "https://sciencemesh.cesnet.cz/iop/remote.php/webdav"
+    },
+    "api_version": "0.1.0"
+   },
+   {
+    "host": "sciencemesh.cesnet.cz",
+    "endpoint": {
+     "type": {
+      "name": "OCM",
+      "description": "OpenCloudMesh Service"
+     },
+     "name": "OCM",
+     "path": "https://sciencemesh.cesnet.cz/iop/ocm"
+    },
+    "api_version": "0.1.0"
+   },
+   {
+    "host": "sciencemesh.cesnet.cz:443",
+    "endpoint": {
+     "type": {
+      "name": "GATEWAY",
+      "description": "CS3 Gateway Service"
+     },
+     "name": "GATEWAY",
+     "path": "grpc://sciencemesh.cesnet.cz:443",
+     "is_monitored": true
+    },
+    "api_version": "0.1.0"
+   },
+   {
+    "host": "sciencemesh.cesnet.cz",
+    "endpoint": {
+     "type": {
+      "name": "REVAD",
+      "description": "Reva Daemon Service"
+     },
+     "name": "REVAD",
+     "path": "https://sciencemesh.cesnet.cz/iop",
+     "is_monitored": true,
+     "properties": {
+      "API_VERSION": "0.1.0"
+     }
+    },
+    "api_version": "0.1.0",
+    "additional_endpoints": [
+     {
+      "type": {
+       "name": "MESHDIR",
+       "description": "Mesh Directory Service"
+      },
+      "name": "MESHDIR",
+      "path": "https://sciencemesh.cesnet.cz/iop/meshdir/",
+      "is_monitored": true
+     },
+     {
+      "type": {
+       "name": "METRICS",
+       "description": "Prometheus metrics provider"
+      },
+      "name": "METRICS",
+      "path": "https://sciencemesh.cesnet.cz/iop/metrics",
+      "is_monitored": true
+     }
+    ]
+   }
+  ],
+  "properties": {
+   "OPERATOR": "CESNET"
+  }
+ },
+ {
+  "name": "CERN",
+  "full_name": "CERN",
+  "description": "CERN ScienceMesh",
+  "organization": "CERN",
+  "domain": "cern.ch",
+  "homepage": "https://home.cern/",
+  "email": "cernbox-service-ops@cern.ch",
+  "services": [
+   {
+    "host": "sciencemesh.cernbox.cern.ch",
+    "endpoint": {
+     "type": {
+      "name": "OCM",
+      "description": "OpenCloudMesh Service"
+     },
+     "name": "OCM",
+     "path": "https://sciencemesh.cernbox.cern.ch/ocm"
+    },
+    "api_version": "0.1.0"
+   },
+   {
+    "host": "sciencemesh.cernbox.cern.ch:443",
+    "endpoint": {
+     "type": {
+      "name": "GATEWAY",
+      "description": "CS3 Gateway Service"
+     },
+     "name": "GATEWAY",
+     "path": "grpc://sciencemesh.cernbox.cern.ch:443",
+     "is_monitored": true
+    },
+    "api_version": "0.1.0"
+   },
+   {
+    "host": "sciencemesh.cernbox.cern.ch",
+    "endpoint": {
+     "type": {
+      "name": "WEBDAV",
+      "description": "Web Distributed Authoring and Versioning Service"
+     },
+     "name": "WEBDAV",
+     "path": "https://sciencemesh.cernbox.cern.ch/remote.php/webdav"
+    },
+    "api_version": "0.1.0"
+   },
+   {
+    "host": "sciencemesh.cernbox.cern.ch",
+    "endpoint": {
+     "type": {
+      "name": "REVAD",
+      "description": "Reva Daemon Service"
+     },
+     "name": "REVAD",
+     "path": "https://sciencemesh.cernbox.cern.ch",
+     "is_monitored": true,
+     "properties": {
+      "API_VERSION": "0.1.0"
+     }
+    },
+    "api_version": "0.1.0",
+    "additional_endpoints": [
+     {
+      "type": {
+       "name": "METRICS",
+       "description": "Prometheus metrics provider"
+      },
+      "name": "METRICS",
+      "path": "https://sciencemesh.cernbox.cern.ch/metrics",
+      "is_monitored": true
+     }
+    ]
+   }
+  ],
+  "properties": {
+   "OPERATOR": "CERN"
+  }
+ },
+ {
+  "name": "SURFSARA",
+  "full_name": "SURFSARA",
+  "description": "Surfsara ScienceMesh",
+  "organization": "SURFSARA",
+  "domain": "surfsara.nl",
+  "homepage": "https://www.surf.nl/en",
+  "email": "thirsa.deboer@surf.nl",
+  "services": [
+   {
+    "host": "app.cs3mesh-iop.k8s.surfsara.nl",
+    "endpoint": {
+     "type": {
+      "name": "WEBDAV",
+      "description": "Web Distributed Authoring and Versioning Service"
+     },
+     "name": "WEBDAV",
+     "path": "https://app.cs3mesh-iop.k8s.surfsara.nl/iop/remote.php/webdav"
+    },
+    "api_version": "0.1.0"
+   },
+   {
+    "host": "app.cs3mesh-iop.k8s.surfsara.nl",
+    "endpoint": {
+     "type": {
+      "name": "OCM",
+      "description": "OpenCloudMesh Service"
+     },
+     "name": "OCM",
+     "path": "https://app.cs3mesh-iop.k8s.surfsara.nl/iop/ocm"
+    },
+    "api_version": "0.1.0"
+   },
+   {
+    "host": "app.cs3mesh-iop.k8s.surfsara.nl:443",
+    "endpoint": {
+     "type": {
+      "name": "GATEWAY",
+      "description": "CS3 Gateway Service"
+     },
+     "name": "GATEWAY",
+     "path": "grpc://app.cs3mesh-iop.k8s.surfsara.nl:443",
+     "is_monitored": true
+    },
+    "api_version": "0.1.0"
+   },
+   {
+    "host": "app.cs3mesh-iop.k8s.surfsara.nl",
+    "endpoint": {
+     "type": {
+      "name": "REVAD",
+      "description": "Reva Daemon Service"
+     },
+     "name": "REVAD",
+     "path": "https://app.cs3mesh-iop.k8s.surfsara.nl/iop",
+     "properties": {
+      "API_VERSION": "0.1.0"
+     }
+    },
+    "api_version": "0.1.0",
+    "additional_endpoints": [
+     {
+      "type": {
+       "name": "METRICS",
+       "description": "Prometheus metrics provider"
+      },
+      "name": "METRICS",
+      "path": "https://app.cs3mesh-iop.k8s.surfsara.nl/iop/metrics",
+      "is_monitored": true
+     }
+    ]
+   }
+  ],
+  "properties": {
+   "OPERATOR": "SURFSARA"
+  }
+ },
+ {
+  "name": "SURFSARA-TEST",
+  "full_name": "SURFSARA-TEST",
+  "description": "Surfsara ScienceMesh Test Instance",
+  "organization": "SURFSARA-TEST",
+  "domain": "surf-iop-rd-app-acc.data.surfsara.nl",
+  "homepage": "https://www.surf.nl/en",
+  "email": "thirsa.deboer@surf.nl",
+  "services": [
+   {
+    "host": "surf-iop-rd-app-acc.data.surfsara.nl",
+    "endpoint": {
+     "type": {
+      "name": "WEBDAV",
+      "description": "Web Distributed Authoring and Versioning Service"
+     },
+     "name": "WEBDAV",
+     "path": "https://surf-iop-rd-app-acc.data.surfsara.nl/remote.php/webdav"
+    },
+    "api_version": "0.1.0"
+   },
+   {
+    "host": "surf-iop-rd-app-acc.data.surfsara.nl",
+    "endpoint": {
+     "type": {
+      "name": "OCM",
+      "description": "OpenCloudMesh Service"
+     },
+     "name": "OCM",
+     "path": "https://surf-iop-rd-app-acc.data.surfsara.nl/ocm"
+    },
+    "api_version": "0.1.0"
+   },
+   {
+    "host": "surf-iop-rd-app-acc.data.surfsara.nl:443",
+    "endpoint": {
+     "type": {
+      "name": "GATEWAY",
+      "description": "CS3 Gateway Service"
+     },
+     "name": "GATEWAY",
+     "path": "https://surf-iop-rd-app-acc.data.surfsara.nl:443",
+     "is_monitored": true
+    },
+    "api_version": "0.1.0"
+   },
+   {
+    "host": "surf-iop-rd-app-acc.data.surfsara.nl",
+    "endpoint": {
+     "type": {
+      "name": "REVAD",
+      "description": "Reva Daemon Service"
+     },
+     "name": "REVAD",
+     "path": "https://surf-iop-rd-app-acc.data.surfsara.nl",
+     "properties": {
+      "API_VERSION": "0.1.0"
+     }
+    },
+    "api_version": "0.1.0",
+    "additional_endpoints": [
+     {
+      "type": {
+       "name": "METRICS",
+       "description": "Prometheus metrics provider"
+      },
+      "name": "METRICS",
+      "path": "https://surf-iop-rd-app-acc.data.surfsara.nl/metrics",
+      "is_monitored": true
+     }
+    ]
+   }
+  ],
+  "properties": {
+   "OPERATOR": "SURFSARA"
+  }
+ },
+ {
+  "name": "SURF-EXP",
+  "full_name": "SURF-EXP",
+  "description": "Surfsara ScienceMesh Experimental Instance",
+  "organization": "SURF-EXP",
+  "domain": "thirsa.nl",
+  "homepage": "https://www.surf.nl/en",
+  "email": "thirsa.deboer@surf.nl",
+  "services": [
+   {
+    "host": "exp-surf-iop-rd-app-acc.data.surfsara.nl",
+    "endpoint": {
+     "type": {
+      "name": "WEBDAV",
+      "description": "Web Distributed Authoring and Versioning Service"
+     },
+     "name": "WEBDAV",
+     "path": "https://exp-surf-iop-rd-app-acc.data.surfsara.nl/remote.php/webdav"
+    }
+   },
+   {
+    "host": "exp-surf-iop-rd-app-acc.data.surfsara.nl",
+    "endpoint": {
+     "type": {
+      "name": "OCM",
+      "description": "OpenCloudMesh Service"
+     },
+     "name": "OCM",
+     "path": "https://exp-surf-iop-rd-app-acc.data.surfsara.nl/ocm"
+    }
+   },
+   {
+    "host": "grpc-exp-surf-iop-rd-app-acc.data.surfsara.nl:443",
+    "endpoint": {
+     "type": {
+      "name": "GATEWAY",
+      "description": "CS3 Gateway Service"
+     },
+     "name": "GATEWAY",
+     "path": "https://grpc-exp-surf-iop-rd-app-acc.data.surfsara.nl:443",
+     "is_monitored": true
+    }
+   },
+   {
+    "host": "exp-surf-iop-rd-app-acc.data.surfsara.nl",
+    "endpoint": {
+     "type": {
+      "name": "REVAD",
+      "description": "Reva Daemon Service"
+     },
+     "name": "REVAD",
+     "path": "https://exp-surf-iop-rd-app-acc.data.surfsara.nl/"
+    },
+    "additional_endpoints": [
+     {
+      "type": {
+       "name": "METRICS",
+       "description": "Prometheus metrics provider"
+      },
+      "name": "METRICS",
+      "path": "https://exp-surf-iop-rd-app-acc.data.surfsara.nl/metrics",
+      "is_monitored": true
+     }
+    ]
+   }
+  ],
+  "properties": {
+   "OPERATOR": "SURFSARA"
+  }
+ },
+ {
+  "name": "CUBBIT",
+  "full_name": "CUBBIT",
+  "description": "Cubbit ScienceMesh",
+  "organization": "CUBBIT",
+  "domain": "cubbit.io",
+  "homepage": "http://www.cubbit.io",
+  "email": "hello@cubbit.io",
+  "services": [
+   {
+    "host": "sciencemesh.cubbit.io",
+    "endpoint": {
+     "type": {
+      "name": "OCM",
+      "description": "OpenCloudMesh Service"
+     },
+     "name": "OCM",
+     "path": "https://sciencemesh.cubbit.io/ocm"
+    },
+    "api_version": "0.1.0"
+   },
+   {
+    "host": "sciencemesh.cubbit.io:443",
+    "endpoint": {
+     "type": {
+      "name": "GATEWAY",
+      "description": "CS3 Gateway Service"
+     },
+     "name": "GATEWAY",
+     "path": "grpc://sciencemesh.cubbit.io:443",
+     "is_monitored": true
+    },
+    "api_version": "0.1.0"
+   },
+   {
+    "host": "sciencemesh.cubbit.io",
+    "endpoint": {
+     "type": {
+      "name": "WEBDAV",
+      "description": "Web Distributed Authoring and Versioning Service"
+     },
+     "name": "WEBDAV",
+     "path": "https://sciencemesh.cubbit.io/remote.php/webdav"
+    },
+    "api_version": "0.1.0"
+   },
+   {
+    "host": "sciencemesh.cubbit.io",
+    "endpoint": {
+     "type": {
+      "name": "REVAD",
+      "description": "Reva Daemon Service"
+     },
+     "name": "REVAD",
+     "path": "https://sciencemesh.cubbit.io",
+     "properties": {
+      "API_VERSION": "0.1.0"
+     }
+    },
+    "api_version": "0.1.0",
+    "additional_endpoints": [
+     {
+      "type": {
+       "name": "METRICS",
+       "description": "Prometheus metrics provider"
+      },
+      "name": "METRICS",
+      "path": "https://sciencemesh.cubbit.io/metrics",
+      "is_monitored": true
+     }
+    ]
+   }
+  ],
+  "properties": {
+   "OPERATOR": "CUBBIT"
+  }
+ },
+ {
+  "name": "AILLERON",
+  "full_name": "Ailleron/Softwaremind",
+  "description": "Ailleron ScienceMesh",
+  "organization": "Ailleron/Softwaremind",
+  "domain": "sciencemesh.softwaremind.com",
+  "homepage": "https://softwaremind.com/",
+  "email": "dawid.golosz@softwaremind.com",
+  "services": [
+   {
+    "host": "sciencemesh.softwaremind.com",
+    "endpoint": {
+     "type": {
+      "name": "WEBDAV",
+      "description": "Web Distributed Authoring and Versioning Service"
+     },
+     "name": "WEBDAV",
+     "path": "https://sciencemesh.softwaremind.com/iop/remote.php/webdav"
+    },
+    "api_version": "0.1.0"
+   },
+   {
+    "host": "sciencemesh.softwaremind.com",
+    "endpoint": {
+     "type": {
+      "name": "OCM",
+      "description": "OpenCloudMesh Service"
+     },
+     "name": "OCM",
+     "path": "https://sciencemesh.softwaremind.com/iop/ocm"
+    },
+    "api_version": "0.1.0"
+   },
+   {
+    "host": "sciencemesh.softwaremind.com:443",
+    "endpoint": {
+     "type": {
+      "name": "GATEWAY",
+      "description": "CS3 Gateway Service"
+     },
+     "name": "GATEWAY",
+     "path": "grpc://sciencemesh.softwaremind.com:443",
+     "is_monitored": true
+    },
+    "api_version": "0.1.0"
+   },
+   {
+    "host": "sciencemesh.softwaremind.com",
+    "endpoint": {
+     "type": {
+      "name": "REVAD",
+      "description": "Reva Daemon Service"
+     },
+     "name": "REVAD",
+     "path": "https://sciencemesh.softwaremind.com/iop",
+     "is_monitored": true,
+     "properties": {
+      "API_VERSION": "0.1.0"
+     }
+    },
+    "api_version": "0.1.0",
+    "additional_endpoints": [
+     {
+      "type": {
+       "name": "METRICS",
+       "description": "Prometheus metrics provider"
+      },
+      "name": "METRICS",
+      "path": "https://sciencemesh.softwaremind.com/iop/metrics",
+      "is_monitored": true
+     }
+    ]
+   }
+  ],
+  "properties": {
+   "OPERATOR": "AILLERON"
+  }
+ },
+ {
+  "name": "SWITCH",
+  "full_name": "SWITCH",
+  "description": "SWITCHdrive provides cloud storage to its students, faculty and researchers.",
+  "organization": "SWITCH",
+  "domain": "switch.ch",
+  "homepage": "https://www.switch.ch",
+  "email": "fergus.kerins@switch.ch",
+  "services": [
+   {
+    "host": "sciencemesh-test.switch.ch",
+    "endpoint": {
+     "type": {
+      "name": "OCM",
+      "description": "OpenCloudMesh Service"
+     },
+     "name": "OCM",
+     "path": "https://sciencemesh-test.switch.ch/iop/ocm"
+    },
+    "api_version": "0.1.0"
+   },
+   {
+    "host": "sciencemesh-test.switch.ch:443",
+    "endpoint": {
+     "type": {
+      "name": "GATEWAY",
+      "description": "CS3 Gateway Service"
+     },
+     "name": "GATEWAY",
+     "path": "grpc://sciencemesh-test.switch.ch:443",
+     "is_monitored": true
+    },
+    "api_version": "0.1.0"
+   },
+   {
+    "host": "sciencemesh-test.switch.ch",
+    "endpoint": {
+     "type": {
+      "name": "WEBDAV",
+      "description": "Web Distributed Authoring and Versioning Service"
+     },
+     "name": "WEBDAV",
+     "path": "https://sciencemesh-test.switch.ch/iop/remote.php/webdav"
+    },
+    "api_version": "0.1.0"
+   },
+   {
+    "host": "sciencemesh-test.switch.ch",
+    "endpoint": {
+     "type": {
+      "name": "REVAD",
+      "description": "Reva Daemon Service"
+     },
+     "name": "REVAD",
+     "path": "https://sciencemesh-test.switch.ch/iop",
+     "is_monitored": true,
+     "properties": {
+      "API_VERSION": "0.1.0"
+     }
+    },
+    "api_version": "0.1.0",
+    "additional_endpoints": [
+     {
+      "type": {
+       "name": "METRICS",
+       "description": "Prometheus metrics provider"
+      },
+      "name": "METRICS",
+      "path": "https://sciencemesh-test.switch.ch/iop/metrics",
+      "is_monitored": true
+     }
+    ]
+   }
+  ],
+  "properties": {
+   "OPERATOR": "SWITCH"
+  }
+ },
+ {
+  "name": "DTU",
+  "full_name": "Danmarks Tekniske Universitet",
+  "description": "DTU ScienceMesh",
+  "organization": "Danmarks Tekniske Universitet",
+  "domain": "dtu.dk",
+  "homepage": "https://www.dtu.dk",
+  "email": "marpap@dtu.dk",
+  "services": [
+   {
+    "host": "cs3mesh.sciencedata.dk",
+    "endpoint": {
+     "type": {
+      "name": "WEBDAV",
+      "description": "Web Distributed Authoring and Versioning Service"
+     },
+     "name": "WEBDAV",
+     "path": "https://cs3mesh.sciencedata.dk/remote.php/webdav"
+    },
+    "api_version": "0.1.0"
+   },
+   {
+    "host": "cs3mesh.sciencedata.dk",
+    "endpoint": {
+     "type": {
+      "name": "OCM",
+      "description": "OpenCloudMesh Service"
+     },
+     "name": "OCM",
+     "path": "https://cs3mesh.sciencedata.dk/ocm"
+    },
+    "api_version": "0.1.0"
+   },
+   {
+    "host": "cs3mesh.sciencedata.dk:19000",
+    "endpoint": {
+     "type": {
+      "name": "GATEWAY",
+      "description": "CS3 Gateway Service"
+     },
+     "name": "GATEWAY",
+     "path": "grpc://cs3mesh.sciencedata.dk:19000",
+     "is_monitored": true
+    },
+    "api_version": "0.1.0"
+   },
+   {
+    "host": "cs3mesh.sciencedata.dk",
+    "endpoint": {
+     "type": {
+      "name": "REVAD",
+      "description": "Reva Daemon Service"
+     },
+     "name": "REVAD",
+     "path": "https://cs3mesh.sciencedata.dk",
+     "properties": {
+      "API_VERSION": "0.1.0"
+     }
+    },
+    "api_version": "0.1.0",
+    "additional_endpoints": [
+     {
+      "type": {
+       "name": "METRICS",
+       "description": "Prometheus metrics provider"
+      },
+      "name": "METRICS",
+      "path": "https://cs3mesh.sciencedata.dk/metrics",
+      "is_monitored": true
+     }
+    ]
+   }
+  ],
+  "properties": {
+   "OPERATOR": "DTU"
+  }
+ },
+ {
+  "name": "PONDERSOURCE",
+  "full_name": "Ponder Source Foundation",
+  "description": "Ponder Source provides software development, specialized in federated data architectures.",
+  "organization": "Stichting Ponder Source",
+  "domain": "pondersource.org",
+  "homepage": "https://pondersource.org/",
+  "email": "michiel@pondersource.com",
+  "services": [
+   {
+    "host": "mesh.pondersource.org",
+    "endpoint": {
+     "type": {
+      "name": "OCM",
+      "description": "OpenCloudMesh Service"
+     },
+     "name": "OCM",
+     "path": "https://mesh.pondersource.org/ocm"
+    },
+    "api_version": "0.1.0"
+   },
+   {
+    "host": "mesh.pondersource.org:19000",
+    "endpoint": {
+     "type": {
+      "name": "GATEWAY",
+      "description": "CS3 Gateway Service"
+     },
+     "name": "GATEWAY",
+     "path": "grpc://mesh.pondersource.org:19000",
+     "is_monitored": true
+    },
+    "api_version": "0.1.0"
+   },
+   {
+    "host": "mesh.pondersource.org",
+    "endpoint": {
+     "type": {
+      "name": "WEBDAV",
+      "description": "Web Distributed Authoring and Versioning Service"
+     },
+     "name": "WEBDAV",
+     "path": "https://mesh.pondersource.org/remote.php/webdav"
+    },
+    "api_version": "0.1.0"
+   },
+   {
+    "host": "mesh.pondersource.org",
+    "endpoint": {
+     "type": {
+      "name": "REVAD",
+      "description": "Reva Daemon Service"
+     },
+     "name": "REVAD",
+     "path": "https://mesh.pondersource.org",
+     "properties": {
+      "API_VERSION": "0.1.0"
+     }
+    },
+    "api_version": "0.1.0",
+    "additional_endpoints": [
+     {
+      "type": {
+       "name": "METRICS",
+       "description": "Prometheus metrics provider"
+      },
+      "name": "METRICS",
+      "path": "https://mesh.pondersource.org/metrics",
+      "is_monitored": true
+     }
+    ]
+   }
+  ],
+  "properties": {
+   "OPERATOR": "PONDERSOURCE",
+   "ORGANIZATION": "Stichting Ponder Source"
+  }
+ }
+]
+
+
