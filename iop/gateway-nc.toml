@@ -15,6 +15,7 @@ home_provider = "/home"
 "/home" = {"address" = "iop-storageprovider-home:17000"}
 "/reva" = {"address" = "iop-storageprovider-reva:18000"}
 "123e4567-e89b-12d3-a456-426655440000" = {"address" = "iop-storageprovider-reva:18000"}
+"00000000-0000-0000-0000-000000000000" = {"address" = "iop-storageprovider-reva:18000"}
 
 #[grpc.services.authprovider]
 [grpc.services.authregistry]
@@ -37,6 +38,7 @@ driver = "nextcloud"
 endpoint = "https://nextcloud.softwaremind.com/index.php/apps/sciencemesh/"
 shared_secret = "shared-secret-1"
 mock_http = false
+webdav_host = "https://nextcloud.softwaremind.com/"
 
 [grpc.services.ocmshareprovider]
 driver = "nextcloud"
@@ -45,6 +47,7 @@ driver = "nextcloud"
 endpoint = "https://nextcloud.softwaremind.com/index.php/apps/sciencemesh/"
 shared_secret = "shared-secret-1"
 mock_http = false
+webdav_host = "https://nextcloud.softwaremind.com/"
 
 [grpc.services.storageprovider]
 driver = "nextcloud"
@@ -71,8 +74,20 @@ shared_secret = "shared-secret-1"
 mock_http = false
 
 [grpc.services.ocminvitemanager]
+
 [grpc.services.ocmproviderauthorizer]
-driver = "json"
+driver = "mentix"
+
+[grpc.services.ocmproviderauthorizer.drivers.mentix]
+url = "https://iop.sciencemesh.uni-muenster.de/iop/mentix/cs3"
+verify_request_hostname = false
+insecure = false
+timeout = 10
+refresh = 900
+
+#[grpc.services.ocmproviderauthorizer]
+#driver = "json"
+
 [grpc.services.appregistry]
 driver = "static"
 
@@ -105,6 +120,15 @@ mime_types = [
 #wopi_url = "http://0.0.0.0:8880/"
 #app_name = "Collabora"
 #app_url = "http://meshapps-collabora-code:9980"
+[http.middlewares.providerauthorizer]
+driver = "mentix"
+
+[http.middlewares.providerauthorizer.drivers.mentix]
+url = "https://iop.sciencemesh.uni-muenster.de/iop/mentix/cs3"
+verify_request_hostname = false
+insecure = false
+timeout = 10
+refresh = 900
 
 [http.services.metrics]
 metrics_data_driver_type = "json"

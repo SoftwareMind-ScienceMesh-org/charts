@@ -34,6 +34,8 @@ publicshares = "localhost:16000"
 
 [grpc.services.ocminvitemanager]
 [grpc.services.ocmproviderauthorizer]
+driver = "json"
+
 
 [grpc.services.appregistry]
 driver = "static"
